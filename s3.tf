@@ -3,10 +3,10 @@
 # ===============================================
 
 resource "aws_s3_bucket" "aurora_bucket" {
-  bucket = "${var.project_name}-bucket"
+  bucket = "${var.project_name}-bucket-s3-aurora-db"
 
   tags = {
-    Name = "${var.project_name}-bucket"
+    Name = "${var.project_name}-bucket-s3-aurora-db"
   }
 }
 
